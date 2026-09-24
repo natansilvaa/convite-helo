@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ef3b27">
+  <title>Um Date Comigo? ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="phone">
+    <div class="dynamic-island"></div>
+    <div class="hearts" aria-hidden="true"></div>
+
+    <section id="step-1" class="screen active">
+      <div class="top-pill" id="teaser">TEM CERTEZA? 👀</div>
+      <div class="emoji-big sad">🥺</div>
+
+      <div class="card question-card">
+        <h1>VOCÊ ACEITARIA IR À<br>UM DATE COMIGO?</h1>
+        <div class="actions">
+          <button class="btn primary" id="yesBtn">SIM</button>
+          <button class="btn no-btn" id="noBtn">NÃO</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="step-2" class="screen">
+      <div class="top-pill" id="plea">PENSA BEM... 🥺</div>
+      <div class="emoji-big sad">🥺</div>
+
+      <div class="card question-card compact">
+        <h1>VOCÊ ACEITARIA IR À<br>UM DATE COMIGO?</h1>
+        <button class="btn primary" id="yesBtn2">SIM</button>
+      </div>
+    </section>
+
+    <section id="step-3" class="screen">
+      <div class="top-pill">POR FAVOR!! 🥺</div>
+      <div class="emoji-big sad">🥺</div>
+
+      <div class="card question-card compact">
+        <h1>VOCÊ ACEITARIA IR À<br>UM DATE COMIGO?</h1>
+        <button class="btn primary" id="yesBtn3">SIM</button>
+      </div>
+    </section>
+
+    <section id="step-4" class="screen">
+      <div class="emoji-big happy">😏🌹</div>
+      <div class="card question-card">
+        <h1>VOCÊ DISSE SIM! 🥺</h1>
+        <p class="sub">Eu estava esperando você dizer não kkkk</p>
+        <button class="btn primary next" id="nextDate">PRÓXIMO 💙</button>
+      </div>
+    </section>
+
+    <section id="step-5" class="screen">
+      <div class="card form-card">
+        <h2>📅 QUANDO VOCÊ TÁ<br>LIVRE?</h2>
+        <label for="date">Escolhe a data</label>
+        <input type="date" id="date">
+        <label for="time">Escolhe o horário</label>
+        <input type="time" id="time" value="19:00">
+        <button class="btn primary next" id="dateNext">SELECIONAR A DATA 💙</button>
+        <small class="error" id="dateError"></small>
+      </div>
+    </section>
+
+    <section id="step-6" class="screen">
+      <div class="card choices-card">
+        <h2>O QUE TÁ AFIM? 😌</h2>
+        <p class="sub">Escolhe a comida</p>
+        <div class="grid choices" id="foodChoices">
+          <button class="choice" data-value="Hambúrguer">🍔<span>Hambúrguer</span></button>
+          <button class="choice" data-value="Sushi">🍣<span>Sushi</span></button>
+          <button class="choice" data-value="Massas">🍝<span>Massas</span></button>
+          <button class="choice" data-value="Tacos">🌮<span>Tacos</span></button>
+          <button class="choice" data-value="Pizza">🍕<span>Pizza</span></button>
+        </div>
+        <button class="btn disabled next" id="foodNext">ESCOLHE PRIMEIRO ☝️</button>
+      </div>
+    </section>
+
+    <section id="step-7" class="screen">
+      <div class="card choices-card">
+        <h2>QUAL É A VIBE? 🌼</h2>
+        <p class="sub">Escolhe a atividade ideal</p>
+        <div class="grid choices" id="vibeChoices">
+          <button class="choice" data-value="Golfe">⛳<span>Golfe</span></button>
+          <button class="choice" data-value="Caminhada">🚶<span>Caminhada</span></button>
+          <button class="choice" data-value="Cinema">🎬<span>Cinema</span></button>
+          <button class="choice" data-value="Dança">💃<span>Dança</span></button>
+          <button class="choice" data-value="Parque">🌳<span>Parque</span></button>
+          <button class="choice" data-value="Praia">🏖️<span>Praia</span></button>
+        </div>
+        <button class="btn disabled next" id="vibeNext">ESCOLHE PRIMEIRO ☝️</button>
+      </div>
+    </section>
+
+    <section id="step-8" class="screen">
+      <div class="emoji-big penguin">🐧🌹</div>
+      <div class="card final-card">
+        <h2>TÔ CONTIGO,<br>GATINHA. 💙</h2>
+        <p>Fica pronta que eu vou te buscar 🚗</p>
+        <div class="summary" id="summary"></div>
+        <button class="btn primary whatsapp" id="whatsappBtn">CONFIRMAR NO WHATSAPP 💚</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

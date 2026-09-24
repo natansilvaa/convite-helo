@@ -38,10 +38,34 @@ button{border:0;cursor:pointer}
   color:white;font-size:14px;font-weight:800;letter-spacing:.5px;
   box-shadow:0 5px 13px #7e160e66;margin-bottom:38px;
 }
-.emoji-big{font-size:132px;line-height:1;filter:drop-shadow(0 7px 4px #8e190f55);margin-bottom:40px}
-.emoji-big.sad{font-size:128px}
-.emoji-big.happy{font-size:112px;margin-bottom:36px}
-.emoji-big.penguin{font-size:110px;margin-bottom:28px}
+
+.emoji-big {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 40px;
+  filter: drop-shadow(0 7px 4px #8e190f55);
+}
+
+.emoji-big.sad {
+  width: 150px;
+  height: 150px;
+}
+
+.emoji-big.happy {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 0px;
+}
+
+.emoji-big.penguin {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 28px;
+}
+
+
 .card{
   position:relative;width:min(100%,340px);color:#fff;
   background:linear-gradient(160deg,#64120f,#430a09);
